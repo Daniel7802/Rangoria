@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5861067415722836045}
   - component: {fileID: 3561228533609804501}
-  - component: {fileID: 8582130914789583960}
   - component: {fileID: 7803316278292647208}
+  - component: {fileID: -885296822840196419}
   m_Layer: 0
   m_Name: Boomerang
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3561228533609804501
 SpriteRenderer:
@@ -86,28 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8582130914789583960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6782286693457160291}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1597847c24b179d4f92cc323417647ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 7803316278292647208}
-  pointA: {x: 0, y: 0, z: 0}
-  pointB: {x: 0, y: 0, z: 0}
-  vectorLineal: {x: 0, y: 0, z: 0}
-  moveVector: {x: 0, y: 0, z: 0}
-  moveSpeed: 2
-  movement: 0
-  time: 0
-  directions: 0
-  onAir: 0
 --- !u!50 &7803316278292647208
 Rigidbody2D:
   serializedVersion: 4
@@ -135,3 +113,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-885296822840196419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6782286693457160291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 100dec09faa604f42ae9c871d22fafe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
