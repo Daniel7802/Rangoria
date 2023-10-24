@@ -125,3 +125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 100dec09faa604f42ae9c871d22fafe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
+  speed: 3
+  rigidbody: {fileID: 7803316278292647208}
+  posPlayer: {fileID: 3394837053072197383, guid: 5d9aa4a56e788e041922ee242bf64f63, type: 3}
+  _aimPoint: {x: 0, y: 0}
