@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    // BOOMERANG VARIABLES
     public bool isThrown = false;
 
     [SerializeField]
