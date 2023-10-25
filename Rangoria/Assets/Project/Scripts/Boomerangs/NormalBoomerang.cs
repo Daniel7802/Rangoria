@@ -18,5 +18,6 @@ public class NormalBoomerang : Boomerang
     private void FixedUpdate()
     {
         Movement();
+        //detectComeback();
     }
 }

@@ -128,5 +128,8 @@ MonoBehaviour:
   damage: 1
   speed: 3
   rigidbody: {fileID: 7803316278292647208}
-  posPlayer: {fileID: 3394837053072197383, guid: 5d9aa4a56e788e041922ee242bf64f63, type: 3}
+  rigidbodyPlayer: {fileID: 3394837053072197383, guid: 5d9aa4a56e788e041922ee242bf64f63, type: 3}
+  vectorMove: {x: 0, y: 0}
   _aimPoint: {x: 0, y: 0}
+  _startPoint: {x: 0, y: 0}
+  comeBack: 0
