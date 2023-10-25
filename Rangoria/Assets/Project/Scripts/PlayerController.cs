@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//public class PlayerController : MonoBehaviour
-//{
-//    public bool isThrown = false;
+public class PlayerController : MonoBehaviour
+{
+    // BOOMERANG VARIABLES
+    public bool isThrown = false;
 
 //    [SerializeField]
 //    GameObject boomerang;
