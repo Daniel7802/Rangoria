@@ -10,22 +10,24 @@ public class Boomerang : MonoBehaviour
     protected float speed;
     public Rigidbody2D rigidbody;
     public Rigidbody2D posPlayer;
-    Vector2 vectorMove;
-    Vector2 vectorDirection;
+    [SerializeField]
+    private Vector2 vectorMove;
+    private Vector2 vectorDirection;
     public Vector2 _aimPoint;
+    [SerializeField]
     public Vector2 _startPoint;
     protected virtual void ActionBoomerang() { }
    
     public Boomerang(float d, float s)
     {
-        damage = d; speed = s;
+        damage = d; speed = s; 
     }
         
    protected void Movement()
     {
         vectorDirection = (_aimPoint-_startPoint).normalized;
         vectorMove += vectorDirection * speed * Time.deltaTime;
-        rigidbody.MovePosition(vectorMove);
+        rigidbody.MovePosition(_startPoint + vectorMove);
     }
     private void OnDrawGizmos()
     {
