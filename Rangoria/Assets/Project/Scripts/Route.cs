@@ -14,6 +14,7 @@ public class Route : MonoBehaviour
         for (float t = 0;t<=1; t+=0.05f)
         {
             gizmosPosition = Mathf.Pow(1-t,2) * controlPoints[0].position + 2*(1-t) * t * controlPoints[1].position+Mathf.Pow(t,2)*controlPoints[2].position;
+            //Mathf.Pow(1 - tParam, 2) * p0 + 2 * (1 - tParam) * tParam * p1 + Mathf.Pow(tParam, 2) * p2;
             Gizmos.DrawSphere(gizmosPosition, 0.25f);
         }
 
