@@ -45,9 +45,9 @@ public class RouteFollow : MonoBehaviour
         {
             tParam += Time.deltaTime * speedModifier;
 
-            objectToMovePosition = Mathf.Pow(1 - tParam, 2) * p0 + 2 * (1 - tParam) * tParam * p1 + Mathf.Pow(tParam, 2) * p2;
+            transform.position = Mathf.Pow(1 - tParam, 2) * p0 + 2 * (1 - tParam) * tParam * p1 + Mathf.Pow(tParam, 2) * p2;
 
-            transform.position = objectToMovePosition;
+            //transform.position = objectToMovePosition;
             yield return new WaitForEndOfFrame();
         }
 
